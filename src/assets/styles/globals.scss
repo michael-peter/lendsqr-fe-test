@@ -1,1 +1,53 @@
-$primary: red
+:root {
+  // palette
+  --primary-main: rgba(33, 63, 125, 1);
+  --primary-neutral: rgba(33, 63, 125, 0.1);
+  --secondary-main: rgba(57, 205, 204, 1);
+  --secondary-neutral: rgba(57, 205, 204, 0.06);
+
+  --blue-main: rgba(87, 24, 255, 1);
+  --blue-neutral: rgba(87, 24, 255, 0.1);
+  --purple-main: rgba(223, 24, 255, 1);
+  --purple-neutral: rgba(223, 24, 255, 0.1);
+  --crimson-main: rgba(245, 95, 68, 1);
+  --crimson-neutral: rgba(245, 95, 68, 0.1);
+  --red-main: rgba(228, 3, 59, 1);
+  --red-neutral: rgba(228, 3, 59, 0.1);
+  --yellow-main: rgba(233, 178, 0, 1);
+  --yellow-neutral: rgba(233, 178, 0, 0.1);
+  --green-main: rgba(57, 205, 98, 1);
+  --green-neutral: rgba(57, 205, 98, 0.1);
+
+  --background-default: rgba(251, 251, 251, 1);
+  --background-paper: rgba(255, 255, 255, 1);
+
+  // spacing
+  --space: 2px;
+  --space-2: 4px;
+  --space-3: 6px;
+  --space-4: 8px;
+  --space-5: 10px;
+  --space-6: 12px;
+  --space-7: 14px;
+  --space-8: 16px;
+  --space-9: 18px;
+  --space-10: 20px;
+  --space-11: 22px;
+  --space-12: 24px;
+  --space-13: 26px;
+  --space-14: 28px;
+  --space-15: 30px;
+  --space-16: 32px;
+  --space-17: 34px;
+  --space-18: 36px;
+  --space-19: 38px;
+  --space-20: 40px;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
