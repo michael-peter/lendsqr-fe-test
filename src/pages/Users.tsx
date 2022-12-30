@@ -9,7 +9,7 @@ export default function Users() {
       <div className={classes.wrapper}>
         <h1 className={classes.header}>Users</h1>
 
-        <section>
+        <section className={classes.info_cards_container}>
           {infoCards.map((card) => (
             <InfoCard key={card.color} {...card} />
           ))}

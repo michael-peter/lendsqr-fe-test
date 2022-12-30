@@ -16,6 +16,10 @@ export default function InfoCard(props: InfoCardProps) {
       <div className={iconContainerClassName}>
         <Icon />
       </div>
+
+      <p className={classes.sub_text}>{props.sub}</p>
+
+      <h3 className={classes.label}>{props.label}</h3>
     </div>
   );
 }

@@ -9,3 +9,9 @@
   color: var(--color-main);
   font-weight: var(--font-bold);
 }
+
+.info_cards_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-13);
+}

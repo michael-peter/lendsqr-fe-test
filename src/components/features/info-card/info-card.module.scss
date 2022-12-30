@@ -34,3 +34,19 @@
 .icon_container_red {
   background-color: var(--red-neutral);
 }
+
+.sub_text {
+  font-weight: var(--font-semi);
+  font-size: var(--text-md);
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--color-alt);
+}
+
+.label {
+  font-weight: var(--font-bold);
+  font-size: var(--text-lg);
+  line-height: 28px;
+  text-transform: uppercase;
+  color: var(--color-main);
+}
