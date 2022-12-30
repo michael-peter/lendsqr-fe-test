@@ -22,7 +22,11 @@ export default function Button(props: ButtonProps) {
       className={`${className} ${Boolean(props.className) && props.className}`}
     >
       {Boolean(props.startIcon) && StartIcon}
-      {props.children}
+      {Boolean(props.startIcon) || Boolean(props.endIcon) ? (
+        <span>{props.children}</span>
+      ) : (
+        props.children
+      )}
       {Boolean(props.endIcon) && EndIcon}
     </button>
   );

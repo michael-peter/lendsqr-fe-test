@@ -1,4 +1,7 @@
 .nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: grid;
   grid-template-columns: 2fr 10fr;
   column-gap: var(--space-30);

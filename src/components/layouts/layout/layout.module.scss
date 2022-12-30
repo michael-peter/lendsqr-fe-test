@@ -1,3 +1,7 @@
 .main {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2.7fr 9.3fr;
+  gap: var(--space-30);
+
+  padding-top: 116px;
 }

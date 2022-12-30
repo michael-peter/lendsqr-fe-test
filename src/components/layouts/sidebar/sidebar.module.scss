@@ -1,5 +1,24 @@
-.main {
-  min-height: 100vh;
+.aside {
   display: flex;
-  background-color: var(--background-default);
+  flex-direction: column;
+  gap: var(--space-15);
+  padding: var(--space-15) 0;
+
+  background-color: var(--background-paper);
+  box-shadow: 0 5px 20px var(--shadow-default);
+}
+
+.organisation {
+  & button {
+    padding: var(--space-4) var(--space-15);
+    font-weight: var(--font-regular);
+
+    &:hover {
+      background-color: inherit;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
 }

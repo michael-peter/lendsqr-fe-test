@@ -14,6 +14,10 @@
   &:focus {
     outline: var(--space-2) solid var(--secondary-neutral);
   }
+
+  & > * {
+    flex-shrink: 0;
+  }
 }
 
 .button_contained {
