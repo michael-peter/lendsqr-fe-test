@@ -1,0 +1,26 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    border: none;
+    background-color: var(--primary-neutral);
+  }
+
+  &:active {
+    border: none;
+    background-color: var(--primary-neutral-dark);
+  }
+
+  & svg {
+    width: var(--text-base);
+    height: var(--text-base);
+  }
+}

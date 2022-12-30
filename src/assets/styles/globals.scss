@@ -1,10 +1,17 @@
 :root {
   // palette
   --primary-main: rgba(33, 63, 125, 1);
+  --primary-dark: rgb(24, 47, 94);
   --primary-neutral: rgba(33, 63, 125, 0.1);
-  --secondary-main: rgba(57, 205, 204, 1);
-  --secondary-neutral: rgba(57, 205, 204, 0.06);
+  --primary-neutral-dark: rgba(33, 63, 125, 0.5);
 
+  --secondary-main: rgba(57, 205, 204, 1);
+  --secondary-dark: rgb(31, 134, 134);
+  --secondary-neutral: rgba(57, 205, 204, 0.06);
+  --secondary-neutral-dark: rgba(57, 205, 204, 0.5);
+
+  --white: rgba(255, 255, 255, 1);
+  --black: rgba(0, 0, 0, 1);
   --blue-main: rgba(87, 24, 255, 1);
   --blue-neutral: rgba(87, 24, 255, 0.1);
   --purple-main: rgba(223, 24, 255, 1);
@@ -20,6 +27,9 @@
 
   --background-default: rgba(251, 251, 251, 1);
   --background-paper: rgba(255, 255, 255, 1);
+  --divider-default: rgba(84, 95, 125, 0.15);
+
+  --shadow-default: rgba(0, 0, 0, 0.04);
 
   // spacing
   --space: 2px;
@@ -42,6 +52,19 @@
   --space-18: 36px;
   --space-19: 38px;
   --space-20: 40px;
+  --space-30: 60px;
+
+  // typography
+  --text-base: 16px;
+  --text-md: 14px;
+  --text-sm: 12px;
+
+  --font-regular: 400;
+  --font-semi: 500;
+  --font-bold: 600;
+
+  --color-main: rgba(33, 63, 125, 1);
+  --color-light: rgba(84, 95, 125, 0.6);
 }
 
 *,
@@ -50,4 +73,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  background-color: var(--background-default);
 }

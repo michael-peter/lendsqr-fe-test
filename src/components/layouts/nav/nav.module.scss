@@ -1,3 +1,46 @@
-.wrapper {
-  background-color: var(--primary-main);
+.nav {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  column-gap: var(--space-30);
+  padding: var(--space-15);
+  background-color: var(--background-paper);
+  box-shadow: 3px 0 20px var(--shadow-default);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-15);
+
+  & form {
+    flex-grow: 1;
+  }
+}
+
+.activity {
+  display: flex;
+  align-items: center;
+  gap: var(--space-15);
+
+  & svg {
+    width: var(--space-13) !important;
+    height: var(--space-13) !important;
+  }
+
+  & a {
+    color: var(--color-main);
+    font-family: "Roboto", sans-serif !important;
+
+    &:active,
+    &:visited {
+      font-family: "Roboto", sans-serif !important;
+    }
+  }
 }

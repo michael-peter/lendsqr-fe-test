@@ -1,0 +1,23 @@
+.input {
+  background: var(--background-paper);
+  border: var(--space) solid var(--divider-default);
+  border-radius: var(--space-4);
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: var(--font-regular);
+  font-size: var(--text-md);
+  line-height: var(--text-base);
+  color: var(--color-main);
+
+  padding: var(--space-6) var(--space-10);
+
+  &:focus {
+    outline: none;
+    border: var(--space) solid var(--primary-main);
+  }
+
+  &::placeholder {
+    color: var(--color-light);
+  }
+}
