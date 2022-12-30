@@ -1,0 +1,12 @@
+.error_404_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & h1 {
+    font-size: 72px;
+    font-weight: var(--font-bold);
+    font-family: "Fira Code", monospace;
+    color: var(--color-main);
+  }
+}

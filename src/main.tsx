@@ -1,23 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./assets/styles/globals.scss";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Index from "./pages/Index";
 import Users from "./pages/Users";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Index />,
-  },
-  {
-    path: "/users",
-    element: <Users />,
-  },
-]);
+import Error404 from "./pages/404";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/users" element={<Users />} />
+        <Route path="*" element={<Error404 />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );

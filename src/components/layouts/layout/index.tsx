@@ -10,10 +10,10 @@ export default function Layout(props: LayoutProps) {
   return (
     <>
       <Nav />
-      <main className={classes.main}>
+      <div className={classes.wrapper}>
         <Sidebar />
-        {props.children}
-      </main>
+        <main>{props.children}</main>
+      </div>
     </>
   );
 }

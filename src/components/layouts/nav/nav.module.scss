@@ -1,9 +1,10 @@
 .nav {
   position: fixed;
+  z-index: 3;
   top: 0;
   width: 100%;
   display: grid;
-  grid-template-columns: minmax(240px, 2.7fr) 9.3fr;
+  grid-template-columns: minmax(250px, 2.7fr) 9.3fr;
   column-gap: var(--space-30);
   padding: var(--space-15) 0;
   background-color: var(--background-paper);
@@ -22,7 +23,7 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--space-15);
-  padding-right: var(--space-15);
+  padding-right: var(--space-30);
 
   & form {
     flex-grow: 1;

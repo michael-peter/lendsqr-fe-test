@@ -3,6 +3,7 @@
   --primary-main: rgba(33, 63, 125, 1);
   --primary-dark: rgb(24, 47, 94);
   --primary-neutral: rgba(33, 63, 125, 0.1);
+  --primary-neutral-light: rgba(33, 63, 125, 0.06);
   --primary-neutral-dark: rgba(33, 63, 125, 0.5);
 
   --secondary-main: rgba(57, 205, 204, 1);
@@ -55,9 +56,10 @@
   --space-30: 60px;
 
   // typography
+  --text-sm: 12px;
   --text-base: 16px;
   --text-md: 14px;
-  --text-sm: 12px;
+  --text-lg: 24px;
 
   --font-regular: 400;
   --font-semi: 500;
@@ -66,6 +68,9 @@
   --color-main: rgba(33, 63, 125, 1);
   --color-alt: rgba(84, 95, 125, 1);
   --color-light: rgba(84, 95, 125, 0.6);
+
+  // general
+  --nav-height: 116px;
 }
 
 *,

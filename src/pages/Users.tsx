@@ -1,9 +1,20 @@
+import InfoCard from "../components/features/info-card";
 import Layout from "../components/layouts/layout";
+import { infoCards } from "../utils/constants/info_cards";
+import classes from "../assets/styles/users.module.scss";
 
 export default function Users() {
   return (
     <Layout>
-      <h1>This is the users page</h1>
+      <div className={classes.wrapper}>
+        <h1 className={classes.header}>Users</h1>
+
+        <section>
+          {infoCards.map((card) => (
+            <InfoCard key={card.color} {...card} />
+          ))}
+        </section>
+      </div>
     </Layout>
   );
 }

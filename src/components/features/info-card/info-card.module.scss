@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  padding: var(--space-15);
+  background-color: var(--background-paper);
+  border: 1px solid var(--primary-neutral-light);
+  border-radius: var(--space-2);
+  box-shadow: 3px 5px 20px var(--shadow-default);
+}
+
+.icon_container {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px;
+  border-radius: 50%;
+}
+
+.icon_container_purple {
+  background-color: var(--purple-neutral);
+}
+
+.icon_container_blue {
+  background-color: var(--blue-neutral);
+}
+
+.icon_container_crimson {
+  background-color: var(--crimson-neutral);
+}
+
+.icon_container_red {
+  background-color: var(--red-neutral);
+}

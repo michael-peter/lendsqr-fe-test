@@ -1,5 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
-import { customersSidebarLinks } from "../../../utils/constants/sidebar_links";
+import {
+  businessesSidebarLinks,
+  customersSidebarLinks,
+  settingsSidebarLinks,
+} from "../../../utils/constants/sidebar_links";
 import { BriefcaseIcon, CaretDownIcon, HomeIcon } from "../../icons";
 import { Button } from "../../input";
 import classes from "./sidebar.module.scss";
@@ -21,7 +25,7 @@ export default function Sidebar() {
       </section>
 
       <section className={classes.section}>
-        <Link to="/dashoboard">
+        <Link to="/dashboard">
           <div
             className={`${classes.sidebar_link} ${
               isActive("/dashboard") && classes.sidebar_link_active
@@ -37,6 +41,40 @@ export default function Sidebar() {
         <p>CUSTOMERS</p>
 
         {customersSidebarLinks.map((Item) => (
+          <Link key={Item.path} to={Item.path}>
+            <div
+              className={`${classes.sidebar_link} ${
+                isActive(Item.path) && classes.sidebar_link_active
+              }`}
+            >
+              <Item.icon />
+              <span>{Item.label}</span>
+            </div>
+          </Link>
+        ))}
+      </section>
+
+      <section className={classes.section}>
+        <p>BUSINESSES</p>
+
+        {businessesSidebarLinks.map((Item) => (
+          <Link key={Item.path} to={Item.path}>
+            <div
+              className={`${classes.sidebar_link} ${
+                isActive(Item.path) && classes.sidebar_link_active
+              }`}
+            >
+              <Item.icon />
+              <span>{Item.label}</span>
+            </div>
+          </Link>
+        ))}
+      </section>
+
+      <section className={classes.section}>
+        <p>SETTINGS</p>
+
+        {settingsSidebarLinks.map((Item) => (
           <Link key={Item.path} to={Item.path}>
             <div
               className={`${classes.sidebar_link} ${

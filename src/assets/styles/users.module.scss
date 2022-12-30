@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-20);
+}
+
+.header {
+  font-size: var(--text-lg);
+  color: var(--color-main);
+  font-weight: var(--font-bold);
+}
