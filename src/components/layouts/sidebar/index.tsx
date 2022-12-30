@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
-import { BriefcaseIcon, CaretDownIcon } from "../../icons";
+import { customersSidebarLinks } from "../../../utils/constants/sidebar_links";
+import { BriefcaseIcon, CaretDownIcon, HomeIcon } from "../../icons";
 import { Button } from "../../input";
 import classes from "./sidebar.module.scss";
 
@@ -19,16 +20,34 @@ export default function Sidebar() {
         </Button>
       </section>
 
-      <section className={classes.dashboard}>
+      <section className={classes.section}>
         <Link to="/dashoboard">
           <div
             className={`${classes.sidebar_link} ${
               isActive("/dashboard") && classes.sidebar_link_active
             }`}
           >
-            Dashboard
+            <HomeIcon />
+            <span>Dashboard</span>
           </div>
         </Link>
+      </section>
+
+      <section className={classes.section}>
+        <p>CUSTOMERS</p>
+
+        {customersSidebarLinks.map((Item) => (
+          <Link key={Item.path} to={Item.path}>
+            <div
+              className={`${classes.sidebar_link} ${
+                isActive(Item.path) && classes.sidebar_link_active
+              }`}
+            >
+              <Item.icon />
+              <span>{Item.label}</span>
+            </div>
+          </Link>
+        ))}
       </section>
     </aside>
   );

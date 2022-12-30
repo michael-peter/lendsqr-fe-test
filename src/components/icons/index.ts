@@ -37,6 +37,7 @@ export { default as GroupOutlinedIcon } from "./status/GroupOutlinedIcon";
 export { default as HandshakeIcon } from "./status/HandshakeIcon";
 export { default as StarFilledIcon } from "./status/StarFilledIcon";
 export { default as StarIcon } from "./status/StarIcon";
+export { default as TransactionsIcon } from "./general/TransactionsIcon";
 export { default as UserCheckAltIcon } from "./status/UserCheckAltIcon";
 export { default as UserCheckIcon } from "./status/UserCheckIcon";
 export { default as UserIcon } from "./status/UserIcon";

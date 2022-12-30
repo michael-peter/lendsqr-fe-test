@@ -11,12 +11,12 @@
 
   &:hover {
     border: none;
-    background-color: var(--primary-neutral);
+    background-color: var(--secondary-neutral);
   }
 
   &:active {
     border: none;
-    background-color: var(--primary-neutral-dark);
+    background-color: var(--secondary-neutral-dark);
   }
 
   & svg {
