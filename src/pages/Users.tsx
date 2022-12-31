@@ -2,6 +2,7 @@ import InfoCard from "../components/features/info-card";
 import Layout from "../components/layouts/layout";
 import { infoCards } from "../utils/constants/info_cards";
 import classes from "../assets/styles/users.module.scss";
+import { Table } from "../components/display/table";
 
 export default function Users() {
   return (
@@ -14,6 +15,8 @@ export default function Users() {
             <InfoCard key={card.color} {...card} />
           ))}
         </section>
+
+        <Table />
       </div>
     </Layout>
   );

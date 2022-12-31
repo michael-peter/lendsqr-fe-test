@@ -25,12 +25,12 @@ export const infoCards: InfoCardProps[] = [
     color: "crimson",
     icon: UsersOutlinedIcon,
     sub: "USERS WITH LOANS",
-    label: "2,453",
+    label: "12,453",
   },
   {
     color: "red",
     icon: MoneyIcon,
     sub: "USERS WITH SAVINGS",
-    label: "2,453",
+    label: "102,453",
   },
 ];
