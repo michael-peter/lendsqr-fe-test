@@ -2,7 +2,8 @@ import InfoCard from "../components/features/info-card";
 import Layout from "../components/layouts/layout";
 import { infoCards } from "../utils/constants/info_cards";
 import classes from "../assets/styles/users.module.scss";
-import { Table } from "../components/display/table";
+import { Table, TableColumn, TableRow } from "../components/display/table";
+import { FilterIcon } from "../components/icons";
 
 export default function Users() {
   return (
@@ -16,8 +17,60 @@ export default function Users() {
           ))}
         </section>
 
-        <Table />
+        <Table columns={columns} rows={rows} />
       </div>
     </Layout>
   );
 }
+
+const columns: TableColumn[] = [
+  {
+    field: "organization",
+    label: (
+      <div className={classes.column_label}>
+        <span>Organization</span>
+        <FilterIcon />
+      </div>
+    ),
+    width: "116px",
+  },
+  { field: "username", label: "Username", width: "106px" },
+  { field: "email", label: "Email", width: "147px" },
+  { field: "phone", label: "Phone Number", width: "124px" },
+  { field: "date", label: "Date Joined", width: "154px" },
+  { field: "status", label: "Status", width: "100px" },
+  { field: "action", label: "", width: "20px" },
+];
+
+const rows: TableRow[] = [
+  {
+    id: "1",
+    organization: "Lendsqr",
+    username: "Adedeji",
+    email: "adedeji@lendsqr.com",
+    phone: "08078903721",
+    date: "May 15, 2020 10:00 AM",
+    status: "inactive",
+    action: "...",
+  },
+  {
+    id: "2",
+    organization: "Lendsqr",
+    username: "Adedeji",
+    email: "adedeji@lendsqr.com",
+    phone: "08078903721",
+    date: "May 15, 2020 10:00 AM",
+    status: "inactive",
+    action: "...",
+  },
+  {
+    id: "3",
+    organization: "Lendsqr",
+    username: "Adedeji",
+    email: "adedeji@lendsqr.com",
+    phone: "08078903721",
+    date: "May 15, 2020 10:00 AM",
+    status: "inactive",
+    action: "...",
+  },
+];

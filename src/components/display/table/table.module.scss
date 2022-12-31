@@ -1,18 +1,37 @@
+.wrapper {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 .table {
-  width: 100%;
+  display: block;
+  max-width: 100%;
+  border-spacing: 0;
   padding: var(--space-15);
   border: 1px solid var(--primary-neutral-light);
   border-radius: 4px;
   box-shadow: 3px 5px 20px var(--shadow-default);
   background-color: var(--background-paper);
+  border-collapse: collapse;
+
+  @media screen and (max-width: 1264px) {
+    max-width: 889px;
+
+    & tr th,
+    & tr td {
+      min-width: 0 !important;
+    }
+  }
 
   thead {
     display: block;
+    width: 100%;
     padding-bottom: calc(var(--space-10) + 3px);
   }
 
   tbody {
     display: block;
+    width: 100%;
 
     & tr {
       padding: calc(var(--space-10) + 3px) 0;
@@ -26,16 +45,30 @@
   }
 
   tr {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // gap: calc(var(--space-15) + 5px);
+    gap: var(--space-5);
+    width: 100%;
+
+    th,
+    td {
+      text-align: left;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
   }
 
-  th,
+  th {
+    text-transform: uppercase;
+    font-size: var(--text-sm);
+    font-weight: var(--font-bold);
+    color: var(--color-main);
+  }
+
   td {
-    flex: 1;
-    text-align: left;
+    font-size: var(--text-md);
+    font-weight: var(--font-regular);
+    color: var(--color-main);
   }
 }
