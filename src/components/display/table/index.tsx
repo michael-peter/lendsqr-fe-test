@@ -1,19 +1,19 @@
 import classes from "./table.module.scss";
 
-export interface TableColumn {
+export interface TableColumnType {
   field: string;
   label: React.ReactNode;
   width: string;
 }
 
-export interface TableRow {
+export interface TableRowType {
   id: string;
   [key: string]: React.ReactNode;
 }
 
 interface TableProps {
-  rows: TableRow[];
-  columns: TableColumn[];
+  rows: TableRowType[];
+  columns: TableColumnType[];
 }
 
 export function Table(props: TableProps) {

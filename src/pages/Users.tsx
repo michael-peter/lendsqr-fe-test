@@ -2,8 +2,13 @@ import InfoCard from "../components/features/info-card";
 import Layout from "../components/layouts/layout";
 import { infoCards } from "../utils/constants/info_cards";
 import classes from "../assets/styles/users.module.scss";
-import { Table, TableColumn, TableRow } from "../components/display/table";
+import {
+  Table,
+  TableColumnType,
+  TableRowType,
+} from "../components/display/table";
 import { FilterIcon } from "../components/icons";
+import { TableColumn } from "../components/features";
 
 export default function Users() {
   return (
@@ -23,15 +28,11 @@ export default function Users() {
   );
 }
 
-const columns: TableColumn[] = [
+const columns: TableColumnType[] = [
   {
     field: "organization",
-    label: (
-      <div className={classes.column_label}>
-        <span>Organization</span>
-        <FilterIcon />
-      </div>
-    ),
+    label: <TableColumn label="Organization" />,
+
     width: "116px",
   },
   { field: "username", label: "Username", width: "106px" },
@@ -42,7 +43,7 @@ const columns: TableColumn[] = [
   { field: "action", label: "", width: "20px" },
 ];
 
-const rows: TableRow[] = [
+const rows: TableRowType[] = [
   {
     id: "1",
     organization: "Lendsqr",
