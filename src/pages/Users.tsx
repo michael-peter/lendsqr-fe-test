@@ -7,8 +7,7 @@ import {
   TableColumnType,
   TableRowType,
 } from "../components/display/table";
-import { FilterIcon } from "../components/icons";
-import { TableColumn } from "../components/features";
+import { TableColumnHeader } from "../components/features";
 
 export default function Users() {
   return (
@@ -31,7 +30,7 @@ export default function Users() {
 const columns: TableColumnType[] = [
   {
     field: "organization",
-    label: <TableColumn label="Organization" />,
+    label: <TableColumnHeader label="Organization" />,
 
     width: "116px",
   },

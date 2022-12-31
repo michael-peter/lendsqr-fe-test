@@ -1,12 +1,12 @@
 import { FilterIcon } from "../../icons";
 import { IconButton } from "../../input";
-import classes from "./table-column.module.scss";
+import classes from "./table-column-header.module.scss";
 
-interface TableColumProps {
+interface TableColumnHeaderProps {
   label: string;
 }
 
-export default function TableColumn(props: TableColumProps) {
+export default function TableColumnHeader(props: TableColumnHeaderProps) {
   return (
     <div className={classes.wrapper}>
       <span>{props.label}</span>
