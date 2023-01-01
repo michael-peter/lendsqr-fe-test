@@ -8,6 +8,8 @@ import {
   TableRowType,
 } from "../components/display/table";
 import { TableColumnHeader } from "../components/features";
+import { MoreIcon } from "../components/icons";
+import { IconButton } from "../components/input";
 
 export default function Users() {
   return (
@@ -34,12 +36,32 @@ const columns: TableColumnType[] = [
 
     width: "116px",
   },
-  { field: "username", label: "Username", width: "106px" },
-  { field: "email", label: "Email", width: "147px" },
-  { field: "phone", label: "Phone Number", width: "124px" },
-  { field: "date", label: "Date Joined", width: "154px" },
-  { field: "status", label: "Status", width: "100px" },
-  { field: "action", label: "", width: "20px" },
+  {
+    field: "username",
+    label: <TableColumnHeader label="Username" />,
+    width: "106px",
+  },
+  {
+    field: "email",
+    label: <TableColumnHeader label="Email" />,
+    width: "147px",
+  },
+  {
+    field: "phone",
+    label: <TableColumnHeader label="Phone number" />,
+    width: "124px",
+  },
+  {
+    field: "date",
+    label: <TableColumnHeader label="Date joined" />,
+    width: "154px",
+  },
+  {
+    field: "status",
+    label: <TableColumnHeader label="Status" />,
+    width: "100px",
+  },
+  { field: "action", label: "", width: "32px" },
 ];
 
 const rows: TableRowType[] = [
@@ -51,7 +73,11 @@ const rows: TableRowType[] = [
     phone: "08078903721",
     date: "May 15, 2020 10:00 AM",
     status: "inactive",
-    action: "...",
+    action: (
+      <IconButton>
+        <MoreIcon />
+      </IconButton>
+    ),
   },
   {
     id: "2",
@@ -61,7 +87,11 @@ const rows: TableRowType[] = [
     phone: "08078903721",
     date: "May 15, 2020 10:00 AM",
     status: "inactive",
-    action: "...",
+    action: (
+      <IconButton>
+        <MoreIcon />
+      </IconButton>
+    ),
   },
   {
     id: "3",
@@ -71,6 +101,10 @@ const rows: TableRowType[] = [
     phone: "08078903721",
     date: "May 15, 2020 10:00 AM",
     status: "inactive",
-    action: "...",
+    action: (
+      <IconButton>
+        <MoreIcon />
+      </IconButton>
+    ),
   },
 ];

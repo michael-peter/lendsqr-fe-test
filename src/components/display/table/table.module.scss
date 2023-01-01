@@ -64,6 +64,11 @@
     font-size: var(--text-sm);
     font-weight: var(--font-bold);
     color: var(--color-main);
+
+    button svg {
+      width: 10px;
+      height: 10px;
+    }
   }
 
   td {
